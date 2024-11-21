@@ -28,3 +28,10 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+  postClass:
+    steps:
+      - uses: actions/github-scripts@v7
+        id: my-script
+        with:
+          result-encoding: string
+          script: return "I am a string"
