@@ -29,6 +29,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
   postClass:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/github-scripts@v7
         id: my-script
